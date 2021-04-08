@@ -31,7 +31,7 @@
 #include "lwip/tcpip.h"
 /* Within 'USER CODE' section, code will be kept by default at each generation */
 /* USER CODE BEGIN 0 */
-
+#include "host_utils.h"
 /* USER CODE END 0 */
 
 /* Private define ------------------------------------------------------------*/
@@ -238,7 +238,7 @@ static void low_level_init(struct netif *netif)
   heth.Init.MediaInterface = ETH_MEDIA_INTERFACE_RMII;
 
   /* USER CODE BEGIN MACADDRESS */
-
+  init_mac_address(heth.Init.MACAddr);
   /* USER CODE END MACADDRESS */
 
   hal_eth_init_status = HAL_ETH_Init(&heth);

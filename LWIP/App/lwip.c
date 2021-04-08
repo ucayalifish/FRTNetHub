@@ -61,7 +61,7 @@ osThreadAttr_t attributes;
   */
 void MX_LWIP_Init(void)
 {
-  /* Initilialize the LwIP stack with RTOS */
+  /* Initialize the LwIP stack with RTOS */
   tcpip_init( NULL, NULL );
 
   /* IP addresses initialization with DHCP (IPv4) */

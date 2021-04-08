@@ -71,6 +71,7 @@ include_directories(
         Middlewares/Third_Party/LwIP/src/include/compat/posix/sys
         Middlewares/Third_Party/LwIP/src/include/compat/stdc
         Middlewares/Third_Party/LwIP/system/arch Drivers/CMSIS/Include
+        Inc
 )
 
 add_definitions(-DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx)
@@ -82,6 +83,7 @@ file(
         "Middlewares/*.c"
         "LWIP/*.c"
         "Drivers/*.c"
+        "Src/*.c"
 )
 
 set(LINKER_SCRIPT ${CMAKE_SOURCE_DIR}/STM32F429ZITX_FLASH.ld)

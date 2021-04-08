@@ -98,7 +98,6 @@ void HAL_CRC_MspInit(CRC_HandleTypeDef* hcrc)
 
   /* USER CODE END CRC_MspInit 1 */
   }
-
 }
 
 /**
@@ -107,20 +106,19 @@ void HAL_CRC_MspInit(CRC_HandleTypeDef* hcrc)
 * @param hcrc: CRC handle pointer
 * @retval None
 */
-void HAL_CRC_MspDeInit(CRC_HandleTypeDef* hcrc)
+void HAL_CRC_MspDeInit(CRC_HandleTypeDef * hcrc)
 {
-  if(hcrc->Instance==CRC)
-  {
-  /* USER CODE BEGIN CRC_MspDeInit 0 */
+  if (hcrc->Instance == CRC)
+    {
+      /* USER CODE BEGIN CRC_MspDeInit 0 */
 
-  /* USER CODE END CRC_MspDeInit 0 */
-    /* Peripheral clock disable */
-    __HAL_RCC_CRC_CLK_DISABLE();
-  /* USER CODE BEGIN CRC_MspDeInit 1 */
+      /* USER CODE END CRC_MspDeInit 0 */
+      /* Peripheral clock disable */
+      __HAL_RCC_CRC_CLK_DISABLE();
+      /* USER CODE BEGIN CRC_MspDeInit 1 */
 
-  /* USER CODE END CRC_MspDeInit 1 */
-  }
-
+      /* USER CODE END CRC_MspDeInit 1 */
+    }
 }
 
 /**
