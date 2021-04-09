@@ -6,7 +6,7 @@
 
 static char const * host_name_template_ = "FRTNH-%02X%02X%02X%02X%02X%02X";
 
-static char host_name_[HOSTNAME_LENGTH + 1]; // terminating zero
+static char host_name_[] = "FRTNH-XXXXXXXXXXXX"; // terminating zero
 
 #define CPU_ID_ ((const uint32_t *) 0x1FFF7A10)
 

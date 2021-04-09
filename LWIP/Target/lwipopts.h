@@ -1,4 +1,3 @@
-
 /**
   ******************************************************************************
   * File Name          : Target/lwipopts.h
@@ -30,7 +29,7 @@
 
 /* Within 'USER CODE' section, code will be kept by default at each generation */
 /* USER CODE BEGIN 0 */
-
+#define LWIP_NETIF_HOSTNAME 1
 /* USER CODE END 0 */
 
 #ifdef __cplusplus
